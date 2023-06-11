@@ -266,10 +266,24 @@
           transition: 0.5s;
         }
         .jshover{
-          background-color: rgb(116, 118, 2);
+          background-color: rgb(118, 118, 2);
           transition: 0.5s;
         }
-        
+        .chover{
+            background-color: rgb(20, 49, 154);
+          transition: 0.5s;
+
+        }
+        .nodehover{
+            background-color: rgb(2, 104, 27);
+          transition: 0.5s;
+
+        }
+        .pythonhover{
+            background-color: rgb(4, 95, 141);
+          transition: 0.5s;
+
+        }
         
     </style>
 </head>
@@ -348,9 +362,9 @@
         <div class="icons">
             <img src="./html.svg" alt="" id="html">
             <img src="./js.svg" alt="" id="js">
-            <img src="./css.svg" alt=""  class="c">
-            <img src="./c.svg" alt="" class="c">
-            <img src="./cpp.svg" alt="" class="c">
+            <img src="./css.svg" alt=""  id="c1">
+            <img src="./c.svg" alt="" id="c2">
+            <img src="./cpp.svg" alt="" id="c3">
             <img src="./node.svg" alt="" id="node">
             <img src="./icons8-python.svg" alt="" id="python">
         </div>
@@ -391,7 +405,10 @@
 <script>
     let htmlicon = document.getElementById('html');
     let jsicon = document.getElementById('js');
-    let cppccssicon = document.getElementsByClassName('c');
+    let cicon = document.getElementById('c1');
+    let cicon2 = document.getElementById('c2');
+    let cicon3= document.getElementById('c3');
+    let pythonicon= document.getElementById('python');
    
     let nodeicon = document.getElementById('node');
   
@@ -408,6 +425,36 @@
        });
        jsicon.addEventListener('mouseout',function run(){
         colourbg.classList.remove('jshover');
+       });
+       cicon.addEventListener('mouseover',function run(){
+          colourbg.classList.add('chover');
+       });
+       cicon.addEventListener('mouseout',function run(){
+        colourbg.classList.remove('chover');
+       });
+       cicon2.addEventListener('mouseover',function run(){
+          colourbg.classList.add('chover');
+       });
+       cicon2.addEventListener('mouseout',function run(){
+        colourbg.classList.remove('chover');
+       });
+       cicon3.addEventListener('mouseover',function run(){
+          colourbg.classList.add('chover');
+       });
+       cicon3.addEventListener('mouseout',function run(){
+        colourbg.classList.remove('chover');
+       });
+       nodeicon.addEventListener('mouseover',function run(){
+          colourbg.classList.add('nodehover');
+       });
+       nodeicon.addEventListener('mouseout',function run(){
+        colourbg.classList.remove('nodehover');
+       });
+       pythonicon.addEventListener('mouseover',function run(){
+          colourbg.classList.add('pythonhover');
+       });
+       pythonicon.addEventListener('mouseout',function run(){
+        colourbg.classList.remove('pythonhover');
        });
        
      
