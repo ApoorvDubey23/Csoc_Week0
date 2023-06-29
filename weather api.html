@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style> 
+    body{
+        margin: 0px;
+    }
+    .wapi{
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        background-image: url('./weather\ background.jpeg');
+        background-size: cover;
+        
+       
+        align-items: center;
+        text-align: center;
+        padding: 5% 1% 3% 1%;
+    }
+    .ce{ 
+        margin-top: 4%;
+        display: grid;
+        gap: 2px;
+        
+        grid-template-columns: 2fr 4fr;
+       
+    }
+    .cityname{
+        font-size: 3rem;
+        font-weight: 300;
+        padding-bottom: 6%;
+    }
+    .citytemp{
+        font-size: 1.5rem;
+    }
+    .humws{
+        font-size: 1.5rem;
+    }
+    .textwapi{
+        font-size: 3rem;
+font-weight: 600;
+        
+    }
+    .wsrch{
+        padding: 12%;
+        border-right: 1px solid rgb(224, 230, 224);
+        display: flex;
+flex-direction: column;
+align-items: center;
+    }
+    .wsrch input{text-align: center;
+        font-size: 1.4rem;
+      
+        height: 2rem;
+        width: 70%;
+        border-radius: 20px;
+        border: 0px solid white;
+    }
+    .wsrch button{
+        padding: 0px;
+        height: 2rem;
+        width: 40%;
+        border-radius: 20px;
+        border: 0px solid white;
+        margin-top: 4%;
+        font-size: 120%;
+    }
+    .wsrch button:hover{
+        background-color: rgb(174, 178, 182);
+        transform: scale(1.1);
+    }
+    
+    .citydet{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .humws{display: grid;
+    grid-template-columns: 1fr 1fr;}
+    .gh{display: flex;
+        width: 100%;
+    
+align-content: left;}
+.gh a{
+    text-decoration: none;
+    color: white;
+}
+.gh a:hover{
+    color: rgb(9, 7, 7);
+    transform: scale(1.2);
+}
+  
+    </style>
+</head>
+<body>
+    <div class="wapi">
+        <div class="gh">
+            <a href="index.html">
+        go to home
+            </a>
+        </div>
+        <div class="textwapi">
+            creating API to show weather of a given place
+        </div>
+        <div class="ce">
+    
+            <div class="wsrch">
+                <input type="text" placeholder="enter city name">
+                <button>search</button>
+            </div>
+    
+            <div class="citydet">
+                <div class="cityname">--</div>
+                <div >   temperature <br> <span class="citytemp">--</span > </div>
+                <div class="humws">
+                    <div > humidity <br>
+                        <span class="cityhum">
+    
+                            --
+                        </span>
+                        <br>
+                        <img src="" alt="">
+                    </div>
+                    <div >
+                        wind speed 
+                        <br>
+                        <span class="cityws">
+    
+                            --
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+       
+    </div> 
+   
+</body>
+<script src="script.js"></script>
+
+</html>
+
+
+
+
+
+
+
